@@ -1,0 +1,448 @@
+body{
+	padding: 0;
+	margin: 0;
+	overflow-x: hidden;
+	font-family: 微軟正黑體;
+}
+nav{
+	height: 100vh; /*讓nav垂直置中*/
+}
+h4{
+	font-weight:bold;
+}
+.nav-mine .nav-link{
+	padding: 0;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	-webkit-filter:grayscale(1);
+}
+.nav-mine .active{
+	padding: 0;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	-webkit-filter:grayscale(0);
+}
+.nav-mine li{
+	position: relative;
+}
+/*.nav-mine li:hover::before {
+  position: absolute;
+  font-size: 10px;
+  padding: 4px;
+  background-color: rgba(0,0,0,0.4);
+  color: #fff;
+  right: 40px;
+  bottom: 5px;
+  min-width: 110px;
+  text-align: center;
+  border-radius: 5px;
+}*/
+/*.nav-mine li:nth-child(1):hover::before {
+  content: "潘佑萱";
+}
+.nav-mine li:nth-child(2):hover::before {
+  content: "海豚跟烏龜";
+}
+
+.nav-mine li:nth-child(3):hover::before {
+  content: "烏龜";
+}*/
+
+
+article{
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+	background-size: cover;
+	background-position: center center;
+}
+.article1{
+	background-image: url(../img/h3.png);
+}
+.article2{
+	background-image: url(../img/t2.png);
+}
+.article3{
+	background-image: url(../img/t3.png);
+}
+.article-title{
+	z-index: 9909;
+	position: absolute;
+	font-size: 70px;
+	color: rgba(255,255,255,1);
+	text-shadow: 0 0 0.2em #344d5b;
+	text-align: center;
+	top:200px;
+	left:240px;
+	opacity: 0;
+	transition: all 1s;
+	transition-delay: 1s;
+}
+.article-title-active{
+	opacity: 1;
+	transition: all 1s;
+}
+a:hover{
+	text-decoration: none;
+}
+.progress-bgc{
+	background-color: rgba(230,164,80,1);
+}
+.btn-1{
+	width: 300px;
+	height: 80px;
+	color: #fff;
+	margin: 0 auto;
+	background-color: rgba(230,164,80,0.7);
+	text-align: center;
+	border-radius:10px;
+	line-height:75px;
+	font-size: 30px;
+	text-shadow: 0 0 0;
+}
+
+.btn-bg{
+	background-color: rgba(230,164,80,0.7);
+	color: #fff;
+}
+.btn-bg a{
+	color: #fff;
+}
+.btn-bg:hover{
+	background-color:#fff;
+	color: rgba(230,164,80,1);
+}
+.btn-bg:hover a{
+	color: rgba(230,164,80,1);
+}
+
+.container{
+	width: 500px;
+	
+}
+
+.card-p{
+	padding-left: 50vw;
+	padding-top: 50px;
+}
+
+.progress{
+	width: 500px;
+}
+.cardAll{
+	position: relative;
+	width: 500px;
+	min-height: 550px;
+	overflow: hidden; //隱藏超出範圍的文字或圖片
+}
+.card{
+	position: absolute;
+	width: 500px;
+	min-height: 550px;
+	background-color: rgba(255,255,255,0.9);
+	
+	font-family: 微軟正黑體;
+	padding-top: 2px;
+	border:#E6A450 1px  solid;
+}
+
+
+.option-input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  position: relative;
+  top: 3px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  transition: all 0.15s ease-out 0s;
+  background: #cbd1d8;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  margin-right: 0.5rem;
+  outline: none;
+  position: relative;
+  z-index: 1000;
+}
+.option-input:hover {
+  background: #E6A450;
+}
+.option-input:checked {
+  background: #E6A450;
+}
+.option-input:checked::before {
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  content: '✔';
+  display: inline-block;
+  font-size: 15px;
+  text-align: center;
+  line-height: 20px;
+}
+.option-input:checked::after {
+  -webkit-animation: click-wave 0.65s;
+  -moz-animation: click-wave 0.65s;
+  animation: click-wave 0.65s;
+  background: #40e0d0;
+  content: '';
+  display: block;
+  position: relative;
+  z-index: 100;
+}
+.option-input.radio {
+  border-radius: 50%;
+}
+.option-input.radio::after {
+  border-radius: 50%;
+}
+
+
+
+
+
+.card4{
+   z-index: 9999;
+}
+.card3{
+    z-index: 9999;
+}
+.card2{
+    z-index: 9999;
+}
+.card1{
+    z-index: 9999;
+}
+
+
+
+/*
+P.S: if you like my content maybe you will become a donator and donate some money? That helps me to create new awesome materials. https://www.paypal.me/melnik909
+*/
+
+/*
+=====
+LEVEL 1. RESET STYLES
+=====
+*/
+
+.field{
+  --uiFieldPlaceholderColor: var(--fieldPlaceholderColor, #767676);
+}
+
+.field__input{ 
+  background-color: transparent;
+  border-radius: 0;
+  border: none;
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  font-family: inherit;
+  font-size: 1em;
+}
+
+.field__input:focus::-webkit-input-placeholder{
+  color: var(--uiFieldPlaceholderColor);
+}
+
+.field__input:focus::-moz-placeholder{
+  color: var(--uiFieldPlaceholderColor);
+  opacity: 1;
+}
+
+/*
+=====
+LEVEL 2. CORE STYLES
+=====
+*/
+
+.a-field{
+  display: inline-block;
+}
+
+.a-field__input{ 
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.a-field__input:focus{
+  outline: none;
+}
+
+/*
+=====
+LEVEL 3. PRESENTATION STYLES
+=====
+*/
+
+/* a-field */
+
+.a-field{
+  --uiFieldHeight: var(--fieldHeight, 40px);  
+  --uiFieldBorderWidth: var(--fieldBorderWidth, 2px);
+  --uiFieldBorderColor: var(--fieldBorderColor);
+
+  --uiFieldFontSize: var(--fieldFontSize, 1em);
+  --uiFieldHintFontSize: var(--fieldHintFontSize, 1em);
+
+  --uiFieldPaddingRight: var(--fieldPaddingRight, 15px);
+  --uiFieldPaddingBottom: var(--fieldPaddingBottom, 15px);
+  --uiFieldPaddingLeft: var(--fieldPaddingLeft, 15px);   
+
+  position: relative;
+  box-sizing: border-box;
+  font-size: var(--uiFieldFontSize);
+  padding-top: 1em;  
+}
+
+.a-field .a-field__input{
+  height: var(--uiFieldHeight);
+  padding: 0 var(--uiFieldPaddingRight) 0 var(--uiFieldPaddingLeft);
+  border-bottom: var(--uiFieldBorderWidth) solid var(--uiFieldBorderColor);  
+}
+
+.a-field .a-field__input::-webkit-input-placeholder{
+  opacity: 0;
+  transition: opacity .2s ease-out;
+}
+
+.a-field .a-field__input::-moz-placeholder{
+  opacity: 0;
+  transition: opacity .2s ease-out;
+}
+
+.a-field .a-field__input:not(:placeholder-shown) ~ .a-field__label-wrap .a-field__label{
+  opacity: 0;
+  bottom: var(--uiFieldPaddingBottom);
+}
+
+.a-field .a-field__input:focus::-webkit-input-placeholder{
+  opacity: 1;
+  transition-delay: .2s;
+}
+
+.a-field .a-field__input:focus::-moz-placeholder{
+  opacity: 1;
+  transition-delay: .2s;
+}
+
+.a-field .a-field__label-wrap{
+  box-sizing: border-box;
+  width: 100%;
+  height: var(--uiFieldHeight);	
+
+  pointer-events: none;
+  cursor: text;
+
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.a-field .a-field__label{
+  position: absolute;
+  left: var(--uiFieldPaddingLeft);
+  bottom: calc(50% - .5em);
+
+  line-height: 1;
+  font-size: var(--uiFieldHintFontSize);
+
+  pointer-events: none;
+  transition: bottom .2s cubic-bezier(0.9,-0.15, 0.1, 1.15), opacity .2s ease-out;
+  will-change: bottom, opacity;
+}
+
+.a-field .a-field__input:focus ~ .a-field__label-wrap .a-field__label{
+  opacity: 1;
+  bottom: var(--uiFieldHeight);
+}
+
+/* a-field_a1 */
+
+.a-field_a1 .a-field__input{
+  transition: border-color .2s ease-out;
+  will-change: border-color;
+}
+
+.a-field_a1 .a-field__input:focus{
+  border-color: var(--fieldBorderColorActive);
+}
+
+
+/*
+=====
+LEVEL 4. SETTINGS
+=====
+*/
+
+.field{
+  --fieldBorderColor: #E6A450;
+  --fieldBorderColorActive: #F7910F;
+}
+
+
+
+
+
+
+.article-title-3{
+	position: absolute;
+	top:300px;
+	left:210px;
+	text-shadow: 0 0 0.2em rgba(230,164,80,1);
+}
+
+footer{
+	padding: 10px;
+	text-align: center;
+	color: #fff;
+	background-color: #344d5b;
+}
+footer a{
+	color: #fff;
+	text-decoration: none;
+}
+
+@media screen and (max-width: 1280px) {
+
+/* 如果使用者視窗寬度 <= 1280px */
+
+.article-title{
+	z-index: 9909;
+	position: absolute;
+	font-size: 70px;
+	color: rgba(255,255,255,1);
+	text-shadow: 0 0 0.2em #344d5b;
+	text-align: center;
+	top:100px;
+	left:160px;
+	opacity: 0;
+	transition: all 1s;
+	transition-delay: 1s;
+}
+.article-title-active{
+	opacity: 1;
+	transition: all 1s;
+}
+.article-title-3{
+	position: absolute;
+	top:250px;
+	left:100px;
+	text-shadow: 0 0 0.2em rgba(230,164,80,1);
+}
+.card-p{
+	padding-left: 45vw;
+	padding-top: 0px;
+}
+}
