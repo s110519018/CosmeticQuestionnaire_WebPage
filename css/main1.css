@@ -446,3 +446,75 @@ footer a{
 	padding-top: 0px;
 }
 }
+
+
+@media screen and (max-width: 1012px) {
+
+/* 如果使用者視窗寬度 <= 1012px */
+.btn-1{
+	width: 200px;
+	height: 40px;
+	color: #fff;
+	margin: 0 auto;
+	background-color: rgba(230,164,80,0.7);
+	text-align: center;
+	border-radius:10px;
+	line-height:35px;
+	font-size: 20px;
+	text-shadow: 0 0 0;
+}
+
+.article-title{
+	z-index: 9909;
+	position: absolute;
+	font-size: 30px;
+	color: rgba(255,255,255,1);
+	text-shadow: 0 0 0.2em #344d5b;
+	text-align: center;
+	top:20vh;
+	left:0;
+	opacity: 0;
+	transition: all 1s;
+	transition-delay: 1s;
+}
+.article-title-active{
+	opacity: 1;
+	transition: all 1s;
+}
+.article-title-3{
+	position: absolute;
+	top:50vh;
+	left:0;
+	font-size: 20px;
+	text-shadow: 0 0 0.2em rgba(230,164,80,1);
+}
+.card-p{
+	padding-left: 0vw;
+	padding-top: 20px;
+}
+.container{
+	width: 300px;
+	
+}
+
+
+.progress{
+	width: 300px;
+}
+.cardAll{
+	position: relative;
+	width: 300px;
+	min-height: 800px;
+	overflow: hidden; //隱藏超出範圍的文字或圖片
+}
+.card{
+	position: absolute;
+	width:300px;
+	min-height: 800px;
+	background-color: rgba(255,255,255,0.9);
+	
+	font-family: 微軟正黑體;
+	padding-top: 2px;
+	border:#E6A450 1px  solid;
+}
+}
