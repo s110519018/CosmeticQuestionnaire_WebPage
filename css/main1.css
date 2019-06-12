@@ -125,7 +125,7 @@ a:hover{
 
 .card-p{
 	padding-left: 50vw;
-	padding-top: 50px;
+	padding-top: 30px;
 }
 
 .progress{
@@ -142,12 +142,32 @@ a:hover{
 	width: 500px;
 	min-height: 550px;
 	background-color: rgba(255,255,255,0.9);
-	
+	color: #eb8e18;
 	font-family: 微軟正黑體;
 	padding-top: 2px;
 	border:#E6A450 1px  solid;
 }
+.beauty{
+	position: absolute;
+	right: 20px;
+	bottom:70px;
+}
+.data{
+	position: absolute;
+	right: 30px;
+	top:60px;
 
+}
+
+.newbrand{
+	position: absolute;
+	right: 30px;
+	bottom:70px;
+}
+.card-footer{
+	background-color: rgba(255,255,255,0.2);
+	border: rgba(255,255,255,0);
+}
 
 .option-input {
   -webkit-appearance: none;
@@ -421,12 +441,12 @@ footer a{
 .article-title{
 	z-index: 9909;
 	position: absolute;
-	font-size: 70px;
+	font-size: 100px;
 	color: rgba(255,255,255,1);
 	text-shadow: 0 0 0.2em #344d5b;
 	text-align: center;
 	top:300px;
-	left:480px;
+	left:400px;
 	opacity: 0;
 	transition: all 1s;
 	transition-delay: 1s;
@@ -439,7 +459,7 @@ footer a{
 	position: absolute;
 	top:450px;
 	left:200px;
-	font-size: 105px;
+	font-size: 125px;
 	text-shadow: 0 0 0.2em rgba(230,164,80,1);
 }
 .card-p{
@@ -472,6 +492,10 @@ footer a{
 	padding-top: 2px;
 	border:#E6A450 1px  solid;
 }
+.data img{
+	max-width: 256px;
+max-height: 256px;
+}
 }
 
 
@@ -502,9 +526,21 @@ footer a{
 	left:100px;
 	text-shadow: 0 0 0.2em rgba(230,164,80,1);
 }
+.article-title-3{
+	position: absolute;
+	top:50vh;
+	left:80px;
+	font-size: 75px;
+	text-align: center;
+	text-shadow: 0 0 0.2em rgba(230,164,80,1);
+}
 .card-p{
 	padding-left: 45vw;
-	padding-top: 0px;
+	padding-top: 150px;
+}
+.data img{
+	max-width: 180px;
+max-height: 180px;
 }
 }
 
@@ -546,7 +582,8 @@ footer a{
 	position: absolute;
 	top:50vh;
 	left:0;
-	font-size: 20px;
+	font-size: 45px;
+	text-align: center;
 	text-shadow: 0 0 0.2em rgba(230,164,80,1);
 }
 .card-p{
@@ -577,5 +614,15 @@ footer a{
 	font-family: 微軟正黑體;
 	padding-top: 2px;
 	border:#E6A450 1px  solid;
+}
+.data{
+	position: absolute;
+	right: 50px;
+	top:500px;
+
+}
+.data img{
+	max-width: 180px;
+max-height: 180px;
 }
 }
